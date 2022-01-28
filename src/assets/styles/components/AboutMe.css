@@ -1,0 +1,8 @@
+.b-about-me{
+  flex-direction: column;
+  text-align: center;
+	height: 90vh;
+}
+.b-about-me--text{
+  font-size: 1.5em;
+}

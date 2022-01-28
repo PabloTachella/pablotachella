@@ -1,0 +1,28 @@
+.b-header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.b-header__color{
+  height: 4rem;
+  padding: 0 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.05);
+  color:black;
+  font-weight: 500;
+}
+.b-navbar{
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+.b-navbar--item{
+  text-decoration: none;
+  color:black;
+  font-weight: 700;
+}
+.b-navbar--item:hover{
+  color: rgba(0, 0, 0, 0.7);
+}

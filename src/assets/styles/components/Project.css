@@ -1,0 +1,34 @@
+.b-project--info{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.b-project--title{
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.b-project--container-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.b-project--sub-title{
+  margin-top: 2em;
+}
+.b-projects--buttons__site{
+  margin-right: 2em;
+}
+.b-projects--button{
+  display: inline-block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+.b-projects--button:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.b-projects--buttons{
+  margin: 2em 0 8em 0;
+}

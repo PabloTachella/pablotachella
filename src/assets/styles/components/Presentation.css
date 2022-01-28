@@ -1,0 +1,13 @@
+.b-presentation{
+  flex-direction: column;
+  text-align: center;
+	height: 80vh;
+}
+.b-presentation--text{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+.b-presentation--title{
+  margin: 0;
+}
