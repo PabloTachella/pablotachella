@@ -1,12 +1,22 @@
-import React from "react";
-import '../assets/styles/components/Project.css'
+import React from 'react';
+import '../assets/styles/components/Project.css';
 
-const Project = ({ title, src, description, platform, category, developer, technologies, urlSite, urlCode }) => {
+const Project = ({
+  title,
+  src,
+  description,
+  platform,
+  category,
+  developer,
+  technologies,
+  urlSite,
+  urlCode,
+}) => {
   return (
     <div className="b-project">
       <h3 className="b-project--title">{title}</h3>
       <div className="b-project--container-img">
-        <img className="b-project--img" src={src} alt='screenshot' />
+        <img className="b-project--img" src={src} alt="screenshot" />
       </div>
       <h3 className="b-project--sub-title">Descripción del proyecto</h3>
       <p className="b-project--description">{description}</p>
@@ -30,15 +40,20 @@ const Project = ({ title, src, description, platform, category, developer, techn
         <a
           className="b-projects--buttons__site b-projects--button"
           href={urlSite}
-          target="_blank">Ver sitio
+          target="_blank"
+        >
+          Ver sitio
         </a>
-        <a className="b-projects--buttons__code b-projects--button"
+        <a
+          className="b-projects--buttons__code b-projects--button"
           href={urlCode}
-          target="_blank">Ver código
+          target="_blank"
+        >
+          Ver código
         </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
