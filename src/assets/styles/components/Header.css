@@ -1,9 +1,9 @@
-.b-header{
+.b-header {
   position: sticky;
   top: 0;
   background-color: white;
 }
-.b-header__color{
+.b-header__color {
   height: 4rem;
   padding: 0 15vw;
   display: flex;
@@ -13,16 +13,26 @@
   color:black;
   font-weight: 500;
 }
-.b-navbar{
-  width: 30vw;
+.b-navbar {
+  position: relative;
+  height: inherit;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 30vw;
 }
-.b-navbar--item{
-  text-decoration: none;
-  color:black;
-  font-weight: 700;
+
+
+@media (max-width: 1200px) {
+	.b-header__color{
+		padding: 0 5vw;
+	}
+  .b-navbar {
+    width: 40vw;
+  }
 }
-.b-navbar--item:hover{
-  color: rgba(0, 0, 0, 0.7);
+
+@media (max-width: 768px) {
+  .b-navbar {
+    width: 45vw;
+  }
 }

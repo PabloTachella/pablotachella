@@ -1,8 +1,8 @@
-.b-skills{
+.b-skills {
   flex-direction: column;
 	height: 100vh;
 }
-.b-skills--container{
+.b-skills--container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 
@@ -11,37 +11,83 @@
   ;
   width: 90%;
 }
-.b-skills--container img{
+.b-skills--container img {
   width: 1.5em;
   margin-right: 0.5em;
 }
-.b-skills--container li{
+.b-skills--container li {
   list-style: none;
   margin: 0.2em 0;
   display: flex;
   align-items: center;
   font-size: 1.2em;
 }
-.b-software-develoment--title{
+.b-software-develoment--title {
   grid-area: title1;
   font-size: 1.4rem;
 }
-.b-software-develoment--elements{
+.b-software-develoment--elements {
   grid-area: elements1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-right: 2em;
   padding: 0;
 }
-.b-software-tools--title{
+.b-software-tools--title {
   grid-area: title2;
   font-size: 1.4rem;
   padding-left: 6vw;
 }
-.b-software-tools--elements{
+.b-software-tools--elements {
   grid-area: elements2;
   padding-left: 6vw;
 }
-.b-software-tools--elements li{
+.b-software-tools--elements li {
   margin: 0.35em 0;
+}
+
+
+@media (max-width: 992px) {
+  .b-software-develoment--elements {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-skills--container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "title1 title1 title1"
+      "elements1 elements1 elements1"
+      "title2 title2 ."
+      "elements2 elements2 ."
+    ;
+    width: 100%;
+  }
+  .b-software-tools--title {
+    padding-left: 0;
+  }
+  .b-software-tools--elements {
+    padding-left: 0;
+  }
+  .b-skills {
+    height: auto;
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .b-software-develoment--elements {
+    display: block;
+  }
+  .b-software-develoment--title {
+    margin-bottom: 0;
+  }
+  .b-software-tools--title {
+    margin-bottom: 0;
+  }
+  .b-skills--container li {
+    margin-left: 0.5em;
+    font-size: 1rem;
+  }
 }

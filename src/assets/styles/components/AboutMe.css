@@ -1,8 +1,25 @@
-.b-about-me{
+.b-about-me {
   flex-direction: column;
   text-align: center;
 	height: 90vh;
 }
-.b-about-me--text{
-  font-size: 1.5em;
+.b-about-me--text {
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .b-about-me--text {
+    font-size: 1.2rem;
+  }
+  .b-about-me {
+    height: auto;
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .b-about-me--text {
+    font-size: 1rem;
+  }
 }

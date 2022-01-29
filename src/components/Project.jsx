@@ -18,23 +18,23 @@ const Project = ({
       <div className="b-project--container-img">
         <img className="b-project--img" src={src} alt="screenshot" />
       </div>
-      <h3 className="b-project--sub-title">Descripción del proyecto</h3>
+      <h4 className="b-project--sub-title">Descripción del proyecto</h4>
       <p className="b-project--description">{description}</p>
       <div className="b-project--info">
         <div className="b-project--info__platform">
-          <h3 className="b-project--sub-title">Plataforma</h3>
+          <h4 className="b-project--sub-title">Plataforma</h4>
           <p>{platform}</p>
         </div>
         <div className="b-project--info__category">
-          <h3 className="b-project--sub-title">Categoría</h3>
+          <h4 className="b-project--sub-title">Categoría</h4>
           <p>{category}</p>
         </div>
         <div className="b-project--info__developer">
-          <h3 className="b-project--sub-title">Desarrollador</h3>
+          <h4 className="b-project--sub-title">Desarrollador</h4>
           <p>{developer}</p>
         </div>
       </div>
-      <h3 className="b-project--sub-title">Tecnologías utilizadas</h3>
+      <h4 className="b-project--sub-title">Tecnologías utilizadas</h4>
       <p>{technologies.toString().replaceAll(',', ' / ')}</p>
       <div className="b-projects--buttons">
         <a

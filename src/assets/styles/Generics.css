@@ -1,11 +1,24 @@
-.g-center{
+.g-center {
   display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 15vw;
 }
-
-.g-section--title__size{
+.g-section--title__size {
 	font-size: 2.5rem;
 	margin: 3rem 0;
+}
+
+
+@media (max-width: 1200px) {
+	.g-center{
+		margin: 0 5vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.g-section--title__size {
+		font-size: 2rem;
+		margin: 1rem 0;
+	}
 }

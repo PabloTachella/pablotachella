@@ -1,13 +1,22 @@
-.b-presentation{
+.b-presentation {
   flex-direction: column;
   text-align: center;
 	height: 80vh;
 }
-.b-presentation--text{
+.b-presentation--text {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 0.5em;
 }
-.b-presentation--title{
+.b-presentation--title {
   margin: 0;
+}
+
+
+@media (max-width: 576px) {
+  .b-presentation--text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.5em;
+  }
 }

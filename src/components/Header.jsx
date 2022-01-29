@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NavButton from './NavButton';
+import NavBar from './NavBar';
 import '../assets/styles/components/Header.css';
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    const navbar = document.querySelector('.b-navbar--container');
+    const itemsNodeList = document.querySelectorAll('.b-navbar--item');
+    const items = [...itemsNodeList];
+    if (open) {
+      navbar.style = 'display: none';
+    } else {
+      navbar.style = 'display: flex';
+      items.map(
+        (item) => (item.style = 'animation: appear-text 0.4s forwards')
+      );
+    }
+
+    setOpen(!open);
+  };
+
   return (
     <section className="b-header">
       <div className="b-header__color">
@@ -9,18 +29,8 @@ const Header = () => {
           PABLO TACHELLA
         </a>
         <div className="b-navbar">
-          <a href="#" className="b-navbar--item">
-            Inicio
-          </a>
-          <a href="#about-me" className="b-navbar--item">
-            Sobre mí
-          </a>
-          <a href="#skills" className="b-navbar--item">
-            Skills
-          </a>
-          <a href="#portfolio" className="b-navbar--item">
-            Portfolio
-          </a>
+          <NavButton open={open} handleOpen={handleOpen} />
+          <NavBar />
         </div>
       </div>
     </section>
