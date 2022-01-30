@@ -5,22 +5,42 @@ import '../assets/styles/components/Header.css';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  
+  window.addEventListener('resize', appearNavbar);
+
+  function appearNavbar() {
+    const navbar = document.querySelector('.b-navbar--container');
+    if (navbar.style.display == 'none') {
+      const screenWidth = window.screen.width
+      if (screenWidth > 576) {
+        navbar.style = 'display: flex';
+      }
+    }
+  }
 
   const handleOpen = () => {
-    const navbar = document.querySelector('.b-navbar--container');
-    const itemsNodeList = document.querySelectorAll('.b-navbar--item');
-    const items = [...itemsNodeList];
-    if (open) {
-      navbar.style = 'display: none';
-    } else {
-      navbar.style = 'display: flex';
-      items.map(
-        (item) => (item.style = 'animation: appear-text 0.4s forwards')
-      );
-    }
+    const screenWidth = window.screen.width
 
-    setOpen(!open);
+    if (screenWidth <= 576) {
+      const navbar = document.querySelector('.b-navbar--container');
+      if (open) {
+        navbar.style = 'display: none';
+      } else {
+        const itemsNodeList = document.querySelectorAll('.b-navbar--item');
+        const items = [...itemsNodeList];
+
+        navbar.style = 'display: flex';
+        items.map(
+          (item) => (item.style = 'animation: appear-text 0.4s forwards')
+        );
+      }
+      setOpen(!open);
+    }
   };
+
+  const closeNavBar = () => {
+    handleOpen()
+  }
 
   return (
     <section className="b-header">
@@ -30,7 +50,7 @@ const Header = () => {
         </a>
         <div className="b-navbar">
           <NavButton open={open} handleOpen={handleOpen} />
-          <NavBar />
+          <NavBar closeNavBar={closeNavBar} />
         </div>
       </div>
     </section>

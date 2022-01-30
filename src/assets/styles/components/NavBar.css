@@ -56,3 +56,9 @@
     padding: 0.5rem 0;
   }
 }
+
+@media (min-width: 576px) {
+  .b-navbar--container {
+    display: flex;
+  }
+}

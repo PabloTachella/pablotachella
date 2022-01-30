@@ -36,3 +36,9 @@
     width: 45vw;
   }
 }
+
+@media (max-width: 576px) {
+  .b-header__color {
+    height: 3rem;
+  }
+}

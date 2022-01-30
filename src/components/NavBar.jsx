@@ -1,19 +1,19 @@
 import React from 'react';
 import '../assets/styles/components/NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ closeNavBar }) => {
   return (
     <nav className="b-navbar--container">
-      <a href="#" className="b-navbar--item">
+      <a href="#" onClick={closeNavBar} className="b-navbar--item">
         Inicio
       </a>
-      <a href="#about-me" className="b-navbar--item">
+      <a href="#about-me" onClick={closeNavBar} className="b-navbar--item">
         Sobre mí
       </a>
-      <a href="#skills" className="b-navbar--item">
+      <a href="#skills" onClick={closeNavBar} className="b-navbar--item">
         Skills
       </a>
-      <a href="#portfolio" className="b-navbar--item">
+      <a href="#portfolio" onClick={closeNavBar} className="b-navbar--item">
         Portfolio
       </a>
     </nav>
