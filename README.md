@@ -7,6 +7,6 @@
 
 ## Contacto
 
-- 📱 [WhatsApp](https://platzi-conf-merch-bb193.web.app/)
-- 📧 [E-mail](https://walink.co/51a4ea)
+- 📱 [WhatsApp](https://walink.co/51a4ea)
+- 📧 [E-mail](pablotachella95@gmail.com)
 

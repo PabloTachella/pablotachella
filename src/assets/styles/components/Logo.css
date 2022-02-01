@@ -1,0 +1,31 @@
+.b-logo--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border-radius: 100%;
+  margin: 0 1rem;
+}
+.b-logo--container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b-logo--img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+
+@media (max-width: 576px) {
+  .b-logo--container {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .b-logo--img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}

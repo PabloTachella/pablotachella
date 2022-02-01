@@ -5,13 +5,13 @@ import '../assets/styles/components/Header.css';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  
+
   window.addEventListener('resize', appearNavbar);
 
   function appearNavbar() {
     const navbar = document.querySelector('.b-navbar--container');
     if (navbar.style.display == 'none') {
-      const screenWidth = window.screen.width
+      const screenWidth = window.screen.width;
       if (screenWidth > 576) {
         navbar.style = 'display: flex';
       }
@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   const handleOpen = () => {
-    const screenWidth = window.screen.width
+    const screenWidth = window.screen.width;
 
     if (screenWidth <= 576) {
       const navbar = document.querySelector('.b-navbar--container');
@@ -39,8 +39,8 @@ const Header = () => {
   };
 
   const closeNavBar = () => {
-    handleOpen()
-  }
+    handleOpen();
+  };
 
   return (
     <section className="b-header">
