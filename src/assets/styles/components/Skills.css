@@ -1,6 +1,7 @@
 .b-skills {
   flex-direction: column;
-	height: 100vh;
+	height: 30rem;
+  padding-bottom: 4rem;
 }
 .b-skills--container {
   display: grid;

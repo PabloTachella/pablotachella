@@ -1,39 +1,61 @@
+.b-project {
+  width: 20rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
 .b-project--info {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 .b-project--title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: rgba(0, 0, 0, 0.8);
 }
 .b-project--container-img {
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 12rem;
 }
 .b-project--img {
   max-width: 70vw;
+  width: 20rem;
+  object-fit: contain;
 }
 .b-project--sub-title {
   margin-top: 2em;
 }
+.b-project--technologies {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  justify-content: center;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
 .b-projects--buttons__site {
-  margin-right: 2em;
+  margin-right: 1em;
 }
 .b-projects--button {
+  border-radius: 0.5rem;
   display: inline-block;
   padding: 0.5em 2em;
   text-decoration: none;
   text-align: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   font-weight: 500;
 }
 .b-projects--button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .b-projects--buttons {
-  margin: 2em 0 8em 0;
+  margin: 1em 0 2em 0;
 }
 
 

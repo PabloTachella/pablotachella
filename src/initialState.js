@@ -62,7 +62,7 @@ export default {
       title: 'PLATZI CONF MERCH',
       src: platziConfMerch,
       description:
-        'Este proyecto es una PWA (progresive web aplication) de una tienda online con productos de la Platzi-Conf, cuenta con una integración con Paypal y Google Maps. El deploy del proyecto a Firebase se encuentra automatizado con GitHub Actions.',
+        'Este proyecto es una PWA (progresive web aplication) de una tienda online con productos de la Platzi-Conf, cuenta con una integración con Paypal y Google Maps. Deploy automatizado con GitHub Actions.',
       platform: 'Web/Movile/Desktop',
       category: 'Tienda',
       developer: developer,

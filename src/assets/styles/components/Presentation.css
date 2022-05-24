@@ -1,15 +1,49 @@
-.b-presentation {
+.b-presentation--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+}
+.b-presentation--profile-container {
+  width: 25rem;
+  display: flex;
   flex-direction: column;
-  text-align: center;
-	height: 80vh;
+  align-items: center;
+}
+
+.b-presentation--profile-img {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 100%;
+  background-color: greenyellow;
+}
+
+.b-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 25rem;
+  margin-left: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 25rem;
+  padding: 0 2rem;
+  border-radius: 0 2rem 2rem 0;
+  
 }
 .b-presentation--text {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 0.5em;
 }
+.b-presentation--text-secun {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
 .b-presentation--title {
   margin: 0;
+  text-align: center;
 }
 
 

@@ -7,9 +7,6 @@ const NavBar = ({ closeNavBar }) => {
       <a href="#" onClick={closeNavBar} className="b-navbar--item">
         Inicio
       </a>
-      <a href="#about-me" onClick={closeNavBar} className="b-navbar--item">
-        Sobre mí
-      </a>
       <a href="#skills" onClick={closeNavBar} className="b-navbar--item">
         Skills
       </a>

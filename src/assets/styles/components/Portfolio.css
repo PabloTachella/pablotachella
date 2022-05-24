@@ -1,6 +1,9 @@
 .b-portfolio {
-  display: flex;
+  padding-top: 2rem;
   flex-direction: column;
+}
+.b-projects {
+  display: flex;
 }
 
 
